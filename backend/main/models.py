@@ -4,7 +4,7 @@ from django.db import models
 class Detail(models.Model):
     name = models.CharField(max_length=256)
     mobile_number = models.CharField(max_length=20)
-    status = models.CharField(max_length=15, choices=(('pending', 'pending'), ('open', 'open'), ('complete', 'complete')))
+    status = models.CharField(max_length=15, choices=(('pending', 'pending'), ('open', 'open'), ('completed', 'completed')))
     address = models.CharField(max_length=256, null=True, blank=True)
     industry = models.CharField(max_length=256, null=True, blank=True)
     website = models.CharField(max_length=256, null=True, blank=True)
